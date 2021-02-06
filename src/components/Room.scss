@@ -1,0 +1,102 @@
+.Room {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+
+  .number {
+    min-width: 80px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .parcel {
+    min-width: 150px;
+    line-height: 50px;
+    display: flex;
+  }
+
+  .full-name {
+    width: 200px;
+    line-height: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .email {
+    width: 200px;
+    line-height: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .email {
+    width: 200px;
+    line-height: 50px;
+  }
+
+  .parcel-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .buttons {
+    visibility: hidden;
+    margin-left: auto;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .add-parcel-button {
+    line-height: 50px;
+    text-align: center;
+    min-width: 100px;
+    cursor: pointer;
+  }
+
+  .add-parcel-button:hover {
+    background-color: #0E86D4;
+    color: white;
+  } 
+
+  .clear-room-button {
+    line-height: 50px;
+    text-align: center;
+    min-width: 100px;
+    cursor: pointer;
+  }
+
+  .clear-room-button:hover {
+    background-color: red;
+    color: white;
+  } 
+
+  .notify-button {
+    line-height: 50px;
+    text-align: center;
+    min-width: 100px;
+    cursor: pointer;
+  }
+
+  .notify-button:hover {
+    background-color: yellow;
+  } 
+}
+
+
+.Room:hover > .clear-room-button {
+  visibility: visible;
+}
+
+.Room:hover > .buttons {
+  visibility: visible;
+}
+
+.Room:hover {
+  background-color: #d4ebf2;
+}
